@@ -1,0 +1,5 @@
+.env
+.venv
+# notes.txt is a file that contains personal notes I took that I can reference when
+# working on similar projects in the future. It is not necessary for the project to run.
+notes.txt
