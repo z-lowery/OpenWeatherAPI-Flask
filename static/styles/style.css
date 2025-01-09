@@ -20,4 +20,9 @@ input, button {
     font-size: 2rem;
     padding: 1rem;
     border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b8b8b8;
 }
