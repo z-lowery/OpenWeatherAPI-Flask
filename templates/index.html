@@ -15,13 +15,13 @@
             Generates the URL to the file based on this application's configuration.
         
         - Details:
-        1. 'static': Refers to the endpoint Flask uses for serving static files. The folder name could be called something different
-                     but as long as that file name is in line with the static_folder parameter, 'static' will always refer to that folder
-        2. filename='styles/style.css': Specifies the relative path to the file within the `static/` folder.
-           This is the file that will be linked dynamically.
-        3. The result of `url_for` ensures that the generated URL is accurate for the app's current environment and the Flask parameters
-                     that have been set. (e.g., static_folder, a URL prefix like APPLICATION_ROOT or static_url_path, or using a CDN or 
-                     external host (STATIC_HOST))
+            1. 'static': Refers to the endpoint Flask uses for serving static files. The folder name could be called something different
+                    but as long as that file name is in line with the static_folder parameter, 'static' will always refer to that folder
+            2. filename='styles/style.css': Specifies the relative path to the file within the `static/` folder.
+                    This is the file that will be linked dynamically.
+            3. The result of `url_for` ensures that the generated URL is accurate for the app's current environment and the Flask parameters
+                    that have been set. (e.g., static_folder, a URL prefix like APPLICATION_ROOT or static_url_path, or using a CDN or 
+                    external host (STATIC_HOST))
       -->
 
     <link href = "{{ url_for('static', filename = 'styles/style.css') }}" rel = "stylesheet"> 
